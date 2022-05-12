@@ -22,9 +22,13 @@ btn1.addEventListener("click", () => {
     console.log("el resultado es : " valor1 + valor2);
     guionX40();
   }else if(valor3 == 2){
+    guionX40();
     console.log("el resultado es :" valor1 - valor2);
+    guionX40();
   }else{
+    guionX40();
     console.log("fin del algoritmo");
+    guionX40();
   }
 
 });
