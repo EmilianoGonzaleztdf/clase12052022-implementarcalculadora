@@ -2,21 +2,29 @@ rotulo1.innerHTML = "ingrese el primer valor";
 rotulo2.innerHTML = "ingrese el segundo valor";
 rotulo3.innerHTML = "ingrese 1 para sumar o 2 para restar";
 
-let valor1 = document.getElementById("dato1");
-let valor2 = document.getElementById("dato2");
-let valor3 = document.getElementById("dato3");
-
+let btn1 = document.getElementById("btn1");
 
 btn1.addEventListener("click", () => {
   let valor1: number = Number(dato1.value);
   let valor2: number = Number(dato2.value);
   let valor3: number = Number(dato3.value);
 
-  console.log("--------------------------------------");
+  function guionX40(){
+    let guion: string = "-";
+    for (let i = 0; i <= 40; i++) {
+      guion = guion + "-";
+    }
+    console.log(guion);
+  };
+
   if(valor3 == 1){
+    guionX40();
     console.log("el resultado es : " valor1 + valor2);
-  }else{(valor3 == 2)
+    guionX40();
+  }else if(valor3 == 2){
     console.log("el resultado es :" valor1 - valor2);
+  }else{
+    console.log("fin del algoritmo");
   }
-  console.log("--------------------------------------");
+
 });
