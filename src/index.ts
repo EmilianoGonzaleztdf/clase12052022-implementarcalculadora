@@ -9,11 +9,12 @@ btn1.addEventListener("click", () => {
   let valor2: number = Number(dato2.value);
   let valor3: number = Number(dato3.value);
 
-  function dibujarGuiones(){
+  function guionesParaTodos(n:number){
     let guion: string = "-";
-    for (let i = 0; i <= 40; i++) {
+    for (let i = 0; i <= n; i++) {
       guion = guion + "-";
     }
+    
     console.log(guion);
   };
 
@@ -23,18 +24,18 @@ btn1.addEventListener("click", () => {
 
   switch(operacion){
     case 1:
-      dibujarGuiones();
+      guionesParaTodos();
       console.log("el resultado es: " sumar);
-      dibujarGuiones();
+      guionesParaTodos();
       break;
     case 2:
-        dibujarGuiones();
+      guionesParaTodos();
       console.log("el resultado es: " restar);
-      dibujarGuiones();
+      guionesParaTodos();
       break;
     default:
-        dibujarGuiones();
+      guionesParaTodos(1);
       console.log(" *Fin del Algoritmo* ");
-      dibujarGuiones();
+      guionesParaTodos(1);
   }
 });
