@@ -11,9 +11,9 @@ btn1.addEventListener("click", () => {
   let valor2: number = Number(dato2.value);
   let valor3: number = Number(dato3.value);
   
-  function guionesParaTodos(n:number){
-    let guion: string = "-";
-    for (let i = 0; i <= (n); i++) {
+  function guionesParaTodos(){
+    let guion: string = "";
+    for (let i = 0; i <= 40; i++) {
       guion = guion + "-";
     };
     
@@ -26,9 +26,9 @@ btn1.addEventListener("click", () => {
 
   switch(operacion){
     case 1:
-      guionesParaTodos(n);
+      guionesParaTodos();
       console.log("el resultado es: " sumar);
-      guionesParaTodos(n);
+      guionesParaTodos();
       break;
     case 2:
       guionesParaTodos();
@@ -36,8 +36,8 @@ btn1.addEventListener("click", () => {
       guionesParaTodos();
       break;
     default:
-      guionesParaTodos(n);
+      guionesParaTodos();
       console.log(" *Fin del Algoritmo* ");
-      guionesParaTodos(n);
+      guionesParaTodos();
   }
 });
